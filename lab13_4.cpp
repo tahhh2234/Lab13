@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template <class current>
+current mySwap(current &x, current &y);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -30,3 +33,11 @@ int main(){
 	return 0;
 }
 
+template <class current>
+current mySwap(current &x, current &y){
+	current a = x;
+	x = y;
+	y = a;
+	return x;
+	return y;
+}
